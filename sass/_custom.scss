@@ -13,6 +13,12 @@ body {
     background-color: #ffffff;
 }
 
+nav{
+  .fa {
+    font-size: 20px;
+  }
+}
+
 .navbar {
   margin-bottom: 0;
   background-color: transparent!important;
@@ -25,13 +31,21 @@ body {
 .navbar-default .navbar-nav > .active > a{
     color: #313234;
     background-color: transparent; 
-}
-nav{
-
-  .fa {
-    font-size: 20px;
   }
-}
+  
+  .navbar-scroll {
+    background: transparent;
+    position: fixed;
+    padding-top: 15px;
+    transition: .2s;
+  }
+
+  .change {
+      background-color: #fff!important;
+      padding-top: 0px;
+      height: 60px;
+      transition: .5s;
+  }
 
 .bg{
   background: url(../images/banner2.jpg) no-repeat;
@@ -39,16 +53,3 @@ nav{
   width:100%;
 }
 
-.navbar-scroll {
-    background: transparent;
-    position: fixed;
-    padding-top: 15px;
-    transition: .2s;
-}
-
-.change {
-    background-color: #fff!important;
-    padding-top: 0px;
-    height: 60px;
-    transition: .5s;
-}

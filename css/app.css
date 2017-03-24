@@ -8142,6 +8142,9 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff; }
 
+nav .fa {
+  font-size: 20px; }
+
 .navbar {
   margin-bottom: 0;
   background-color: transparent !important; }
@@ -8151,14 +8154,6 @@ body {
 .navbar-default .navbar-nav > .active > a {
   color: #313234;
   background-color: transparent; }
-
-nav .fa {
-  font-size: 20px; }
-
-.bg {
-  background: url(../images/banner2.jpg) no-repeat;
-  height: 100vh;
-  width: 100%; }
 
 .navbar-scroll {
   background: transparent;
@@ -8171,6 +8166,11 @@ nav .fa {
   padding-top: 0px;
   height: 60px;
   transition: .5s; }
+
+.bg {
+  background: url(../images/banner2.jpg) no-repeat;
+  height: 100vh;
+  width: 100%; }
 
 @font-face {
   font-family: 'Material Icons';
