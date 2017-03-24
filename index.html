@@ -13,7 +13,7 @@
 
   <body>
     <div class="bg"></div>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-scroll">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -54,8 +54,16 @@
 
     <!-- JS -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js">
-
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"> </script>
+    <script>
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+            $(".navbar-scroll").addClass("change");
+        } else {
+            $(".navbar-scroll").removeClass("change");
+        }
+    });
     </script>
   </body>
 </html>
